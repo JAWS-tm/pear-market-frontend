@@ -8,7 +8,10 @@
 	list-style-type: none;
 	-webkit-user-drag: none;
 }
-
+:root{
+    --colorDarkTexte: rgb(44, 47, 55);
+	--colorLightDarkText: rgba(63, 62, 62, 0.849);
+}
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: rgb(249, 249, 249);
@@ -17,6 +20,13 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 85%;
+}
+
+h1,
+h2,
+h3,
+p{
+	color: var(--colorDarkTexte);
 }
 
 @media (max-width: 1200px) {
@@ -30,11 +40,34 @@ body {
 		max-width: 95%;
 	}
 }
+/**************************** about products ************/
+
+.grid-about-products{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin: 100px 0;
+	position: relative;
+}
+.about-products h3,
+.about-products p{
+	text-align: center;
+}
+.about-products i{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgb(131, 187, 70);
+	display: block;
+	width: 1em;
+}
+.about-products h3{
+	color: rgb(131, 187, 70) ;
+}
+
 
 /**************************** home-categories ************/
 
 .home-categories {
-	/* padding: 50px; */
 	background-color: rgb(249, 249, 249);
 }
 
@@ -87,11 +120,16 @@ p {
 
 /***************** Fare-products*****************/
 
-.fare-products h2{
+.fare-products h1{
     text-align: center;
-    margin: 50px;
+    margin-top: 100px;
     font-size: 3rem;
     font-weight: 300;
+}
+#fare-product-description{
+	text-align: center;
+	margin: 20px;
+	font-weight: 200 ;
 }
 
 .products-container{
@@ -99,13 +137,13 @@ p {
 	flex-wrap: wrap;
 	align-items: baseline;
     justify-content: center;
-	align-content: space-evenly
+	align-content: space-evenly;
 }
 .item-container{
     border-radius: 10px;
     max-width: 350px;
     margin: 20px;
-    padding: 10px;
+
     display: flex;
     flex-direction: column;
 }
@@ -116,32 +154,175 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+	border-radius: 8px;
 }
 
-.item-container img{
+.img-item-container img{
     width: 90%;
     height: 90%;
     object-fit: cover; 
 }
 
+
+
 .item-container h3{
     display: inline-block;
     font-size: 0.9rem;
-    margin: ;
+    margin: 2px 0;
 }
-#categorie-item{
+.categorie-item{
     font-weight: 200;
     font-size: 0.8rem;
 }
-#name-item{
+.name-item{
     font-weight: 300;
     font-size: 1.2rem;
+	line-height: 1.3rem;
 } 
-#price-item{
+.price-item{
     font-style: italic;
     font-size: 1rem;
     font-weight: 100;
 }
+
+/************** Footer ***************/
+
+footer {
+	margin: 100px 0;
+    padding: 50px 0 90px;
+	background: rgb(26, 25, 25);
+}
+
+#information-title,
+#information-description{
+	text-align: center;
+}
+#information-title{
+	color: rgba(249, 249, 249, 0.849);
+}
+#information-description{
+	margin: 20px auto;
+	max-width: 90%;
+	color: rgba(249, 249, 249, 0.61);
+}
+
+.grid-information{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	gap: 10px;
+}
+
+footer a{
+    color: rgb(248, 239, 239);
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 100px;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: var(--colorDarkTexte);
+	background-color: white;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+/*************************************** My Account ************************************************/
+
+.my-account-content{
+	margin: 100px 30px;
+}
+
+.form-container{
+	background-color: white;
+	padding: 30px;
+}
+.form-container h1{
+	font-weight: 300;
+	font-size: 1.9rem;
+	margin: 15px 0;
+}
+.form-container h2{
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 20px 0;
+}
+
+.form-account{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(43, 42, 42, 0.356);
+	border-radius: 5px;
+	padding: 30px;
+}
+input[type="text"],
+input[type="password"]{
+	padding: 10px;
+	margin: 2px 0 15px;
+	border: 1px solid rgba(27, 27, 27, 0.2);
+	border-radius: 2px;
+	font-size: 1rem;
+	transition: 0.2s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+	border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+label{
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--colorLightDarkText);
+}
+
+.checkbox-container{
+	display: flex;
+	align-items: center;
+	margin: 5px 0 4px;
+}
+.checkbox-container label,
+input[type="checkbox"]{
+	margin: 0 2px;
+}
+
+input[type="submit"]{
+	width: 150px;
+	background: rgb(231, 97, 92);
+	border: none;
+	border-radius: 100px;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	font-weight: 800;
+	color: white;
+	padding: 15px 10px;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.2s;
+}
+input[type="submit"]:hover{
+	background: rgb(135, 192, 72);
+}
+.form-account a{
+	color: var(--colorLightDarkText);
+	font-size: 0.8rem;
+}
+.form-account a:hover{
+	text-decoration: underline;
+}
+
+
 /**************** Responsive **************/
 
 @media screen and (max-width: 800px) {
@@ -156,15 +337,6 @@ p {
 		margin: 20px 0;
 	}
 
-    /*.item-container{
-        width: 50vw;
-    }*/
-
-   /* @media screen and (max-width: 600px) {
-        .item-container{
-            width: 100vw;
-        }
-    }*/
 }
 /**************** Nav bar **************/
 .nav-bar {
