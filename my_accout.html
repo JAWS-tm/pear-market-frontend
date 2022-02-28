@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My account</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <div class="my-account-content">
-        <section class="form-container">
-            <h1>Mon compte</h1>
-            <h2>Connexion</h2>
-            <form action="" method="get" class="form-account">
-                <label for="id">Nom d'utilisateur ou adresse email</label>
-                <input type="text" name="id" id="id" placeholder="exemple: monemail@gmail.com" required>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My account</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/my_account.css" />
+	</head>
+	<body>
+		<div class="my-account-content">
+			<section class="form-container">
+				<h1>Mon compte</h1>
+				<h2>Connexion</h2>
+				<form action="" method="get" class="form-account">
+					<label for="id">Nom d'utilisateur ou adresse email</label>
+					<input
+						type="text"
+						name="id"
+						id="id"
+						placeholder="exemple: monemail@gmail.com"
+						required
+					/>
 
-                <label for="password">Mot de passe </label>
-                <input type="password" name="password" id="password" required>
+					<label for="password">Mot de passe</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						required
+					/>
 
-                <div class="checkbox-container">
-                    <input type="checkbox" id="remember-account" name="remember-account">
-                    <label for="remember-account">Se souvenir de moi</label>
-                </div>
-                    
-                <input type="submit" value="S'IDENTIFIER">
+					<div class="checkbox-container">
+						<input
+							type="checkbox"
+							id="remember-account"
+							name="remember-account"
+						/>
+						<label for="remember-account">Se souvenir de moi</label>
+					</div>
 
-                <a href="#">Mot de pass oublié?</a>
+					<input type="submit" value="S'IDENTIFIER" />
 
-            </form>
-        </section>
-    </div>
-    
-</body>
+					<a href="#">Mot de pass oublié?</a>
+				</form>
+			</section>
+		</div>
+	</body>
 </html>
