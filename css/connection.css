@@ -1,3 +1,4 @@
+@import url(/css/form.css);
 /*************************************** Sign-in / sign-up ************************************************/
 
 .form-container {
@@ -16,39 +17,6 @@
 	border: 1px solid rgba(43, 42, 42, 0.356);
 	border-radius: 5px;
 	padding: 30px;
-}
-
-.name-row {
-	display: flex;
-	justify-content: space-between;
-}
-
-.name-elem {
-	width: calc(50% - 10px);
-	display: flex;
-	flex-direction: column;
-}
-
-@media (max-width: 550px) {
-	.name-row {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.name-elem {
-		width: 100%;
-	}
-}
-
-.checkbox-container {
-	display: flex;
-	align-items: center;
-	margin: 5px 0 4px;
-}
-
-.checkbox-container label,
-input[type="checkbox"] {
-	margin: 0 2px;
 }
 
 .form-account a {
