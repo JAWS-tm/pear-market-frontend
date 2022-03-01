@@ -4,14 +4,38 @@
 .forget-coupon {
 	background: rgb(247, 246, 247);
 	display: flex;
-	padding: 20px;
+	padding: 15px;
 }
 .forget-coupon i,
 .forget-coupon p,
 .forget-coupon a {
-	margin: 0 10px;
+	margin: 0 2px;
+	font-size: 0.8rem;
+	transition: 0.2s;
 }
 .forget-coupon i {
 	color: rgba(0, 0, 0, 0.5);
-	padding-top: 2px;
+	margin: 0 8px;
+	display: flex;
+	align-items: center;
+}
+.forget-coupon a:hover{
+	color: var(--primary-color);
+}
+
+.window-coupon{
+	margin: 15px;
+	font-size: 2rem;
+}
+.window-coupon p{
+	font-size: 0.8rem;
+}
+
+
+.paiement-checkout{
+	display: flex;
+}
+
+.billing-details{
+	
 }

@@ -276,6 +276,7 @@ a {
 .img-item-container {
 	width: 100%;
 	background-color: rgba(224, 221, 241, 0.479);
+	border-radius: 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
