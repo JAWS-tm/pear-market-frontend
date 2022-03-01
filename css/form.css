@@ -1,26 +1,3 @@
-/*************************************** My Account ************************************************/
-
-.form-container {
-	background-color: white;
-	/* padding: 30px; */
-}
-.form-container h1 {
-	font-weight: 300;
-	font-size: 1.9rem;
-}
-.form-container h2 {
-	font-weight: 500;
-	font-size: 1.5rem;
-	margin: 20px 0;
-}
-
-.form-account {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid rgba(43, 42, 42, 0.356);
-	border-radius: 5px;
-	padding: 30px;
-}
 input[type="text"],
 input[type="password"] {
 	padding: 10px;
@@ -46,22 +23,6 @@ label {
 	color: var(--colorLightDarkText);
 }
 
-.checkbox-container {
-	display: flex;
-	align-items: center;
-	margin: 5px 0 4px;
-}
-.checkbox-container label,
-input[type="checkbox"] {
-	margin: 0 2px;
-}
-.form-account a {
-	color: var(--colorLightDarkText);
-	font-size: 0.8rem;
-}
-.form-account a:hover {
-	text-decoration: underline;
-}
 /*************************************** Cart ************************************************/
 
 .cart-container {
