@@ -1,0 +1,95 @@
+/**************** Responsive **************/
+
+/******* Generals ******/
+@media (max-width: 1200px) {
+	.container {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 990px) {
+	.container {
+		max-width: 95%;
+	}
+}
+
+/****** Home ******/
+@media (max-width: 800px) {
+	.card-categories-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-categories {
+		max-width: 75vw;
+		width: 75vw;
+		height: 100%;
+		margin: 20px 0;
+	}
+}
+
+/******* Product list ********/
+@media (min-width: 850px) {
+	.item-container:nth-child(4n) {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 850px) and (min-width: 550px) {
+	.item-container {
+		border-radius: 10px;
+		width: calc(33.33% - 10px);
+
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 15px 35px 0;
+	}
+
+	.item-container:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 550px) {
+	.item-container {
+		border-radius: 10px;
+		width: calc(50% - 10px);
+
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 0 35px 0;
+	}
+
+	.item-container:nth-child(2n + 1) {
+		margin-right: 20px;
+	}
+}
+
+/****** Cart ******/
+@media (max-width: 800px) {
+	.cart-totals-price {
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+/**** Forms *****/
+@media (max-width: 550px) {
+	.name-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.name-elem {
+		width: 100%;
+	}
+}
+
+/****** Content area *******/
+@media (max-width: 850px) {
+	.content-area {
+		margin: 50px 0;
+		padding: 60px 40px;
+	}
+}

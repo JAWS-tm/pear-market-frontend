@@ -34,17 +34,6 @@ label {
 	flex-direction: column;
 }
 
-@media (max-width: 550px) {
-	.name-row {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.name-elem {
-		width: 100%;
-	}
-}
-
 .checkbox-container {
 	display: flex;
 	align-items: center;
