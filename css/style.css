@@ -44,20 +44,21 @@ body {
 	--colorDarkTexte: rgb(44, 47, 55);
 	--colorLightDarkText: rgba(63, 62, 62, 0.849);
 }
-/**************************** répétitif ******************************/
+/**************************** Commons ******************************/
 .red-button {
-	width: 150px;
+	width: fit-content;
 	background: rgb(231, 97, 92);
 	border: none;
 	border-radius: 100px;
 	letter-spacing: 2px;
 	font-size: 0.8rem;
-	font-weight: 800;
+	font-weight: 600;
 	color: white;
-	padding: 15px 10px;
+	padding: 12px 30px;
 	margin: 10px 0;
 	cursor: pointer;
-	transition: 0.2s;
+	transition: 0.2s ease-in-out;
+	text-transform: uppercase;
 }
 .red-button:hover {
 	background: rgb(135, 192, 72);
@@ -559,24 +560,6 @@ footer ul {
 .landing-content.small h1 {
 	position: relative;
 	top: 150px;
-}
-
-/********** Commons ***********/
-.primary-button {
-	text-transform: uppercase;
-	padding: 12px 30px;
-	background-color: var(--secondary-color);
-	color: white;
-	font-weight: 600;
-	font-size: 0.8rem;
-	letter-spacing: 2px;
-	line-height: 1;
-	border-radius: 50px;
-	transition: background-color 0.3s ease-in-out;
-}
-
-.primary-button:hover {
-	background-color: var(--primary-color);
 }
 
 /* content area (category - account - etc) */
