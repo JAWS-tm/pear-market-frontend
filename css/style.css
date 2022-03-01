@@ -44,6 +44,28 @@ body {
 	--colorDarkTexte: rgb(44, 47, 55);
 	--colorLightDarkText: rgba(63, 62, 62, 0.849);
 }
+/**************************** répétitif ******************************/
+.red-button {
+	width: 150px;
+	background: rgb(231, 97, 92);
+	border: none;
+	border-radius: 100px;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	font-weight: 800;
+	color: white;
+	padding: 15px 10px;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.red-button:hover {
+	background: rgb(135, 192, 72);
+}
+.red-button:active {
+	background: rgb(231, 97, 92);
+}
+
 /**************************** about products ************/
 
 .grid-about-products {
@@ -366,6 +388,11 @@ footer ul {
 		width: 75vw;
 		height: 100%;
 		margin: 20px 0;
+	}
+
+	.cart-totals-price {
+		position: relative;
+		width: 100%;
 	}
 }
 /**************** Nav bar **************/

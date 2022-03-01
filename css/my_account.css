@@ -31,13 +31,18 @@ input[type="password"] {
 	padding: 10px;
 	margin: 2px 0 15px;
 	border: 1px solid rgba(27, 27, 27, 0.2);
-	border-radius: 2px;
+	border-radius: 5px;
 	font-size: 1rem;
 	transition: 0.2s;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	outline: none;
+}
+input[type="text"]::placeholder {
+	font-size: 1rem;
+	color: rgba(36, 35, 35, 0.253);
 }
 
 label {
@@ -54,24 +59,6 @@ label {
 .checkbox-container label,
 input[type="checkbox"] {
 	margin: 0 2px;
-}
-
-input[type="submit"] {
-	width: 150px;
-	background: rgb(231, 97, 92);
-	border: none;
-	border-radius: 100px;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
-	font-weight: 800;
-	color: white;
-	padding: 15px 10px;
-	margin: 10px 0;
-	cursor: pointer;
-	transition: 0.2s;
-}
-input[type="submit"]:hover {
-	background: rgb(135, 192, 72);
 }
 .form-account a {
 	color: var(--colorLightDarkText);
