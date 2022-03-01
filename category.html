@@ -4,18 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pear shop</title>
+		<title>Document</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/category.css" />
 		<script
 			src="https://kit.fontawesome.com/1e6afd82c6.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="icon" type="image/jpg" href="assets/img/logo.png" />
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<nav class="nav-bar">
+				<nav class="nav-bar white-background">
 					<div class="background"></div>
 					<div class="shop-logo">
 						<a href="/">
@@ -56,86 +56,33 @@
 				</nav>
 			</header>
 
-			<section class="landing-content">
-				<img src="assets/img/home-landing.jpg" alt="objets en ventes" />
-				<h3>L'electronique à portée de main</h3>
-				<h1>Incroyable variété de produits à partir de 150€</h1>
-				<a class="primary-button" href="/shop">Voir plus</a>
-			</section>
+			<section class="content-area">
+				<nav class="breadcrumb-links">
+					<a href="">Home</a>
+					/ Téléphones
+				</nav>
+				<h1>Téléphones</h1>
 
-			<section>
-				<div class="grid-about-products">
-					<div class="about-products">
-						<i class="fa-solid fa-mobile-button"></i>
-						<h3>TITILE</h3>
-						<p>description</p>
-					</div>
-					<div class="about-products">
-						<i class="fa-solid fa-box"></i>
-						<h3>TITILE</h3>
-						<p>description</p>
-					</div>
-					<div class="about-products">
-						<i class="fa-solid fa-arrows-rotate"></i>
-						<h3>TITILE</h3>
-						<p>description</p>
-					</div>
+				<div class="filter-bar">
+					<p>Affichage de 8 résultats</p>
+					<form action="" method="get">
+						<select name="orderBy" class="order-by">
+							<option value="default">Tri par défaut</option>
+							<option value="popularity">
+								Trier par popularité
+							</option>
+							<option value="rating">Trier par note</option>
+							<option value="date">Trier par date</option>
+							<option value="price-asc">
+								Trier par prix: croissant
+							</option>
+							<option value="price-desc">
+								Trier par prix: décroissant
+							</option>
+						</select>
+					</form>
 				</div>
-			</section>
 
-			<section class="home-categories">
-				<div class="card-categories-container">
-					<div class="card-categories">
-						<div class="image-container">
-							<img src="assets/img/phone.png" alt="" />
-						</div>
-
-						<div>
-							<h2>Smartphones</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Sit, suscipit?
-							</p>
-							<a class="view-more-btn" href="#">Voir plus</a>
-						</div>
-					</div>
-					<div class="card-categories">
-						<div class="image-container">
-							<img src="assets/img/ipad.png" alt="" />
-						</div>
-
-						<div>
-							<h2>Tablettes</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Sit, suscipit?
-							</p>
-							<a class="view-more-btn" href="#">Voir plus</a>
-						</div>
-					</div>
-					<div class="card-categories">
-						<div class="image-container">
-							<img src="assets/img/computer.png" alt="" />
-						</div>
-
-						<div>
-							<h2>Ordinateurs</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Sit, suscipit?
-							</p>
-							<a class="view-more-btn" href="#">Voir plus</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="fare-products">
-				<h2>Fare products</h2>
-				<p id="fare-product-description">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Doloribus, id.
-				</p>
 				<div class="products-container">
 					<div class="item-container">
 						<span class="on-sale">20%</span>
@@ -233,56 +180,5 @@
 				</div>
 			</section>
 		</div>
-
-		<footer>
-			<div class="grid-information">
-				<h2 id="information-title">Information</h2>
-				<h2 id="information-title">Information</h2>
-				<h2 id="information-title">Information</h2>
-
-				<p id="information-description">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Accusamus dolor, provident molestias minus maxime ullam
-					libero illo atque cumque nam?
-				</p>
-				<p id="information-description">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Asperiores deserunt officia recusandae a voluptate nulla
-					molestias minus quibusdam facere minima!
-				</p>
-				<p id="information-description">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Aliquid ex quas dolorum dolore illum vitae voluptatibus ad
-					possimus cupiditate nisi.
-				</p>
-			</div>
-			<ul>
-				<li>
-					<a href="#" target="_blank">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:contact@pear-shop.fr">
-						<i class="far fa-envelope"></i>
-					</a>
-				</li>
-			</ul>
-		</footer>
 	</body>
 </html>
