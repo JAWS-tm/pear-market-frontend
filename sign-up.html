@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Paiment</title>
+		<title>S'inscrire</title>
 		<link rel="stylesheet" href="css/form.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://kit.fontawesome.com/1e6afd82c6.js" crossorigin="anonymous"></script>
@@ -57,14 +57,25 @@
 			</header>
 
 			<section class="content-area">
-				<section class="checkout-container">
-					<h1 class="page-title">Vérifications</h1>
+				<section class="form-container">
+					<h1>Mon compte</h1>
+					<h2>S'inscrire</h2>
+					<form action="" method="get" class="form-account">
+						<label for="id">Nom d'utilisateur ou adresse email</label>
+						<input type="text" name="id" id="id" placeholder="exemple: monemail@gmail.com" required />
 
-					<div class="forget-coupon">
-						<i class="fa-solid fa-circle-info"></i>
-						<p>Vous avez un coupon?</p>
-						<a href="#">Cliquez ici pour rentrer votre code</a>
-					</div>
+						<label for="password">Mot de passe</label>
+						<input type="password" name="password" id="password" required />
+
+						<div class="checkbox-container">
+							<input type="checkbox" id="remember-account" name="remember-account" />
+							<label for="remember-account">Se souvenir de moi</label>
+						</div>
+
+						<input type="submit" class="red-button" value="S'IDENTIFIER" />
+
+						<a href="#">Mot de pass oublié?</a>
+					</form>
 				</section>
 			</section>
 		</div>
