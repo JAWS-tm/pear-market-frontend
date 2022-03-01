@@ -334,14 +334,14 @@ footer {
 	background: rgb(26, 25, 25);
 }
 
-#information-title,
-#information-description {
+.information-title,
+.information-description {
 	text-align: center;
 }
-#information-title {
+.information-title {
 	color: rgba(249, 249, 249, 0.849);
 }
-#information-description {
+.information-description {
 	margin: 20px auto;
 	max-width: 90%;
 	color: rgba(249, 249, 249, 0.61);
@@ -410,11 +410,7 @@ footer ul {
 	left: 0;
 	width: 100vw;
 	height: 70px;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 0.8),
-		rgba(255, 255, 255, 0)
-	);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 	z-index: -1;
 }
 
