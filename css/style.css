@@ -70,25 +70,37 @@ body {
 /**************************** about products ************/
 
 .grid-about-products {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	margin: 100px 0;
+	/* display: grid;
+	grid-template-columns: 33% 33% 33%; */
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 100px;
 	position: relative;
 }
-.about-products h3,
-.about-products p {
-	text-align: center;
+
+.about-products {
+	display: flex;
+	width: 30%;
 }
+
+.about-products .content {
+	width: 90%;
+}
+
 .about-products i {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	color: rgb(131, 187, 70);
-	display: block;
-	width: 1em;
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+
+	color: var(--primary-color);
+	font-size: 1.5rem;
 }
 .about-products h3 {
-	color: rgb(131, 187, 70);
+	color: var(--text-color);
+}
+.about-products p {
+	color: var(--text-light);
+	max-width: 90%;
 }
 
 /**************************** home-categories ************/
