@@ -24,4 +24,9 @@
 	font-size: 0.95rem;
 	font-family: inherit;
 	color: var(--text-light);
+	outline: none;
+}
+
+.order-by:focus {
+	border-color: rgb(179, 179, 179);
 }
