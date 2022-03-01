@@ -1,7 +1,7 @@
 @import url(/css/style.css);
 @import url(/css/products-list.css);
-/************ About brand ************/
 
+/************ About brand ************/
 .grid-about-products {
 	/* display: grid;
 	grid-template-columns: 33% 33% 33%; */
@@ -95,17 +95,6 @@
 .card-categories-container p,
 .view-more-btn {
 	margin: 10px 0;
-}
-
-h2 {
-	font-size: 1.2rem;
-}
-p {
-	font-size: 0.9rem;
-}
-a {
-	text-decoration: none;
-	color: var(--text-color);
 }
 
 .view-more-btn {

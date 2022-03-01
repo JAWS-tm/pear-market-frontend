@@ -32,6 +32,17 @@ body {
 	--colorDarkTexte: rgb(44, 47, 55);
 	--colorLightDarkText: rgba(63, 62, 62, 0.849);
 }
+
+h2 {
+	font-size: 1.2rem;
+}
+p {
+	font-size: 0.9rem;
+}
+a {
+	color: var(--text-color);
+}
+
 /**************************** Commons ******************************/
 .red-button {
 	width: fit-content;
@@ -81,7 +92,6 @@ body {
 .shop-logo a {
 	display: flex;
 	align-items: center;
-	color: inherit;
 }
 
 .shop-logo img {
@@ -114,7 +124,6 @@ body {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	color: var(--text-color);
 	transition: color 0.2s;
 }
 
