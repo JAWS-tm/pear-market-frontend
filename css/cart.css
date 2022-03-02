@@ -38,16 +38,6 @@ td h3 {
 	font-size: 1rem;
 	font-weight: 500;
 }
-td input[type="number"] {
-	padding: 8px;
-	border: 1px solid rgba(0, 0, 0, 0.329);
-	border-radius: 10px;
-	transition: 0.2s;
-}
-td input[type="number"]:focus {
-	border: 1px solid rgba(0, 0, 0, 0.74);
-	outline: none;
-}
 
 .cart-product-container {
 	display: flex;
@@ -89,21 +79,10 @@ td input[type="number"]:focus {
 }
 
 .cart-totals-price {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	/* width: 50vw; */
+	border: 1px solid var(--separator-light);
 	width: 50%;
-	/* right: 200px;
-	position: absolute;
-	right: 0; */
 	margin-left: 50%;
 }
-
-/* @media (max-width: 800px) {
-	.cart-totals-price {
-		margin-left: 0;
-		width: 100%;
-	}
-} */
 
 .cart-totals-text-container {
 	background-color: rgb(251, 251, 251);

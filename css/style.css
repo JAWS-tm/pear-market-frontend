@@ -25,12 +25,20 @@ body {
 
 :root {
 	--text-color: #2b2f38;
-	--text-light: #5d6167;
+	--text-light: #515151;
 	--primary-color: #75c32c;
 	--secondary-color: #fc5f5f;
 
+	--separator-light: #ebebeb;
+
 	--colorDarkTexte: rgb(44, 47, 55);
 	--colorLightDarkText: rgba(63, 62, 62, 0.849);
+}
+
+::selection {
+	/* Code for Firefox */
+	color: white;
+	background: var(--secondary-color);
 }
 
 h2 {
@@ -45,6 +53,8 @@ a {
 
 /**************************** Commons ******************************/
 .red-button {
+	display: inline-block;
+
 	width: fit-content;
 	background: rgb(231, 97, 92);
 	border: none;
@@ -53,6 +63,7 @@ a {
 	font-size: 0.8rem;
 	font-weight: 600;
 	color: white;
+
 	padding: 12px 30px;
 	margin: 10px 0;
 	cursor: pointer;
@@ -244,7 +255,7 @@ a {
 /************** Footer ***************/
 
 footer {
-	margin: 100px 0 0;
+	margin: 50px 0 0;
 	padding: 50px 0;
 	background: rgb(26, 25, 25);
 }
@@ -277,7 +288,6 @@ footer a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 100px;
 	transition: 0.3s;
 }
 footer a:hover {
@@ -289,5 +299,12 @@ footer ul {
 	justify-content: space-between;
 	width: 40vw;
 	min-width: 300px;
-	margin: 0 auto;
+	margin: 50px auto 0;
+}
+
+/*** Other ****/
+.breadcrumb-links {
+	font-size: 0.85rem;
+	opacity: 0.8;
+	margin-bottom: 1rem;
 }

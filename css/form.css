@@ -17,6 +17,17 @@ input[type="text"]::placeholder {
 	color: rgba(36, 35, 35, 0.253);
 }
 
+input[type="number"] {
+	padding: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.329);
+	border-radius: 10px;
+	transition: 0.2s;
+}
+input[type="number"]:focus {
+	border: 1px solid rgba(0, 0, 0, 0.74);
+	outline: none;
+}
+
 label {
 	font-size: 0.8rem;
 	font-weight: 600;

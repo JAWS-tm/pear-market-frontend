@@ -93,3 +93,12 @@
 		padding: 60px 40px;
 	}
 }
+
+/******** Product page *******/
+@media (max-width: 950px) {
+	.product-flex {
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		row-gap: 30px;
+	}
+}
