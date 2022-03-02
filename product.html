@@ -99,10 +99,38 @@
 							molestias minus maxime ullam libero illo atque cumque nam?
 						</div>
 						<div class="tab-content" id="comments">
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor, provident
-								molestias minus maxime ullam libero illo atque cumque nam?
-							</p>
+							<div class="rewiews-container">
+								<h3>Commentaires</h3>
+								<p>Pas encore de commentaires</p>
+							</div>
+
+							<form class="review-form">
+								<h3>Ajouter un avis</h3>
+								<label for="rating-input">Votre note</label>
+								<div class="rating">
+									<span>
+										<a href="" data-value="5"></a>
+										<a href="" data-value="4"></a>
+										<a href="" data-value="3"></a>
+										<a href="" data-value="2"></a>
+										<a href="" data-value="1"></a>
+									</span>
+								</div>
+								<select name="" id="rating-input" required>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+
+								<label for="comment">Votre commentaire</label>
+								<textarea name="" id="comment" cols="30" rows="10" required></textarea>
+
+								<!-- <label for="name">Nom</label> -->
+								<input type="submit" value="Envoyer" class="red-button" />
+							</form>
 						</div>
 					</div>
 

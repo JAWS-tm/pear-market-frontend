@@ -12,14 +12,6 @@
 	margin: 20px 0;
 }
 
-.form-account {
-	display: flex;
-	flex-direction: column;
-	border: 2px solid var(--separator-light);
-	border-radius: 5px;
-	padding: 30px;
-}
-
 .form-account a {
 	color: var(--text-light);
 	font-size: 0.8rem;

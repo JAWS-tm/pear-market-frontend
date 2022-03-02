@@ -158,3 +158,58 @@
 .related-products .item-container {
 	margin-bottom: 0;
 }
+
+/***** Review ****/
+.rewiews-container {
+	margin-bottom: 20px;
+}
+
+.rewiews-container h3 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.review-form h3 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: var(--text-light);
+	margin-bottom: 10px;
+}
+
+.rating {
+	margin-bottom: 10px;
+}
+
+.rating span {
+	display: flex;
+	flex-direction: row-reverse;
+	width: fit-content;
+}
+
+.rating a::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f005";
+}
+
+.rating a:hover::after,
+.rating a.active::after {
+	content: "\f005";
+	font-weight: 900;
+}
+
+.rating a:hover ~ a::after,
+.rating a.active ~ a::after {
+	content: "\f005";
+	font-weight: 900;
+}
+
+.review-form select {
+	display: none;
+}
+
+.review-form textarea {
+	width: 100%;
+	resize: vertical;
+	margin-bottom: 10px;
+}
