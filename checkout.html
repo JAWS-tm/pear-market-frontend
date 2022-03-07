@@ -76,10 +76,8 @@
 					</div>
 
 					<div class="paiement-checkout">
-						<div class="billing-details">
-							<h2>Informations de facturation</h2>
-
-							<form action="">
+							<form action="" class="delivery-details">
+								<h2>Informations de livraison</h2>
 								<div class="name-row">
 									<div class="name-elem">
 										<label for="last-name">Nom</label>
@@ -103,10 +101,70 @@
 										/>
 									</div>
 								</div>
-							</form>
-						</div>
 
-						<div class="your-order"></div>
+								<label for="id">Pays/Région</label>
+								<select name="country-region" id="country-region">Pays-Région</select>
+
+								<label for="id">Adresse</label>
+								<input type="text" name="id" id="id" placeholder="Numéro et non de Rue" required />
+
+								<label for="id">Code postal</label>
+								<input type="text" name="id" id="id" placeholder="ex: 49000" required />
+
+								<label for="id">Ville</label>
+								<input type="text" name="id" id="id" placeholder="ex: Angers" required />
+
+								<label for="id">Numéro de téléphone</label>
+								<input type="text" name="id" id="id" placeholder="ex: 0786228635" required />
+
+								<label for="id">Adresse email</label>
+								<input type="text" name="id" id="id" placeholder="ex: dupond.martin@gmail.com" required />
+							</form>
+
+						<div class="your-order">
+							<h2>Votre commande</h2>
+							<div class="checkout-paiement-recap">
+								<span>Produit</span>
+								<span>Prix</span>
+							</div>
+							<div class="checkout-paiement-recap" id="text-nom-produit">
+								<div id="wrap-product-nb">
+									<span>iphone23</span>
+									<span>x2</span>
+								</div>
+								<span>0.99€</span>
+							</div>
+							<div class="checkout-paiement-recap">
+								<span>Livraison</span>
+								<span>5€</span>
+							</div>
+							<div class="checkout-paiement-recap">
+								<span>Total</span>
+								<span>2907€</span>
+							</div>
+							<div class="mode-paiement-container">
+								<div class="mode-paiement">
+									<input type="radio" name="logo" id="paiement-paypal" value="paypal">
+									<label for="paiement-paypal"><i class="fa-brands fa-cc-paypal"></i></label>
+								</div>
+								<div class="mode-paiement">
+									<input type="radio" name="logo" id="paiement-visa" value="paypal">									
+									<label for="paiement-visa"><i class="fa-brands fa-cc-visa"></i></label>
+								</div>
+								<div class="mode-paiement">
+									<input type="radio" name="logo" id="paiement-mc" value="paypal">
+									<label for="paiement-mc"><i class="fa-brands fa-cc-mastercard"></i></label>
+								</div>
+								<div class="mode-paiement">
+									<input type="radio" name="logo" id="paiement-applepay" value="paypal">
+									<label for="paiement-applepay"><i class="fa-brands fa-cc-apple-pay"></i></label>
+								</div>
+							</div>
+					
+							<a href="#" id="paiement-btn" class="red-button">Confirmer la commande</a>
+							
+						</div>
+					
 					</div>
 				</section>
 			</section>

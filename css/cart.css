@@ -108,19 +108,7 @@ td h3 {
 	justify-content: space-between;
 	margin: 10px 30px;
 	font-size: 0.9rem;
-	position: relative;
-}
-
-.cart-subtotals::after,
-.cart-total::after {
-	content: "";
-	height: 1px;
-	position: absolute;
-	width: 98%;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.15);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .cart-total-flex-container a {
 	margin: 20px auto;
