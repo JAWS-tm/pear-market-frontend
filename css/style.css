@@ -56,7 +56,7 @@ a {
 	display: inline-block;
 
 	width: fit-content;
-	background: rgb(231, 97, 92);
+	background: var(--secondary-color);
 	border: none;
 	border-radius: 100px;
 	letter-spacing: 2px;
@@ -71,10 +71,11 @@ a {
 	text-transform: uppercase;
 }
 .red-button:hover {
-	background: rgb(135, 192, 72);
+	background: var(--primary-color);
 }
 .red-button:active {
-	background: rgb(231, 97, 92);
+	background: var(--secondary-color);
+	opacity: 0.9;
 }
 
 /**************** Nav bar **************/

@@ -133,7 +133,7 @@
 }
 
 .tab-content.active {
-	animation: 1s show forwards;
+	animation: 0.3s show forwards ease-in-out;
 	/* transform: scaleY(1); */
 }
 
