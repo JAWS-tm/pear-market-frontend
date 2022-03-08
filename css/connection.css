@@ -1,5 +1,6 @@
 @import url(/css/style.css);
 @import url(/css/form.css);
+@import url(/css/checkout.css);
 /*************************************** Sign-in / sign-up ************************************************/
 
 .form-container {
@@ -19,4 +20,8 @@
 
 .form-account a:hover {
 	text-decoration: underline;
+}
+
+#forget-password{
+	margin: 20px 0;
 }
