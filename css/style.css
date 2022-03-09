@@ -315,15 +315,23 @@ footer ul {
 /************** error 404*****************/
 
 .error-404{
-	width: 100vw;
-	height: 100vh;
-	background: white url(/assets/img/error-404.jpg) center no-repeat;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
-.error-404 span{
+.error-message span{
 	display: block;
 	text-align: center;
 	padding: 50px 0;
 	font-size: 1.5rem;
 	font-weight: 200;
 	font-style: italic;
+}
+.error-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.error-img img{
+	object-fit: cover;
+	width: 100%;
 }
