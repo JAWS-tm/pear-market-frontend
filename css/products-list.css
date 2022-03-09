@@ -42,38 +42,15 @@
 	flex-direction: column;
 }
 
-.img-item-container {
-	width: 100%;
+.img-card {
 	background-color: rgba(224, 221, 241, 0.479);
 
 	margin-bottom: 0.5rem;
 	border-radius: 8px;
-
-	position: relative;
 }
 
-/* make square div */
-.img-item-container::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
-
-.img-content {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 100%;
-	height: 100%;
-}
-
-.img-item-container img {
-	width: 80%;
+.img-card img {
+	/*width: 80%;*/
 	height: 80%;
 	object-fit: cover;
 }

@@ -1,6 +1,6 @@
-@import url(/css/style.css);
-@import url(/css/form.css);
-@import url(/css/products-list.css);
+@import url(style.css);
+@import url(form.css);
+@import url(products-list.css);
 
 .product-flex {
 	display: grid;
@@ -10,22 +10,11 @@
 }
 
 .img-container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: rgba(224, 221, 241, 0.479);
 }
 
-.img-container::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
-
 .img-container img {
-	width: 80%;
+	/*width: 80%;*/
 	height: 80%;
 	object-fit: cover;
 
