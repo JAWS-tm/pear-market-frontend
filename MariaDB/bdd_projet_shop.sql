@@ -30,10 +30,10 @@ CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(20),
     firstname VARCHAR(20),
-    email VARCHAR(40),
+    email VARCHAR(64), 
     password VARCHAR(100),
     address VARCHAR,
-    is_admin BINARY,
+    is_admin BOOLEAN,
     PRIMARY KEY(id)
 );
 
