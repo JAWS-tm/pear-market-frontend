@@ -32,7 +32,7 @@ CREATE TABLE users(
     firstname VARCHAR(20),
     email VARCHAR(64), 
     password VARCHAR(100),
-    address VARCHAR,
+    address VARCHAR(255),
     is_admin BOOLEAN,
     PRIMARY KEY(id)
 );
