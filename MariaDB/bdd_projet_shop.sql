@@ -27,14 +27,13 @@ CREATE TABLE products(
 
 
 CREATE TABLE users(
-    id INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(64) NOT NULL, 
+    password VARCHAR(100) NOT NULL,
     name VARCHAR(20),
     firstname VARCHAR(20),
-    email VARCHAR(64), 
-    password VARCHAR(100),
     address VARCHAR(255),
-    is_admin BOOLEAN,
-    PRIMARY KEY(id)
+    is_admin BOOLEAN DEFAULT 0,
+    PRIMARY KEY(email)
 );
 
 
@@ -42,11 +41,11 @@ CREATE TABLE users(
 
 CREATE TABLE orders(
     id INT NOT NULL AUTO_INCREMENT,
-    customer_id INT NOT NULL,
+    customer_id VARCHAR(64) NOT NULL,
     date DATE,
     state TINYINT,
     PRIMARY KEY(id),
-    FOREIGN KEY(customer_id) REFERENCES users(id)
+    FOREIGN KEY(customer_id) REFERENCES users(email)
 );
 
 
