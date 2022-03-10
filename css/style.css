@@ -336,7 +336,7 @@ footer ul {
 }
 
 /************** error 404*****************/
-
+/*
 .error-404 {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -360,4 +360,15 @@ footer ul {
 .error-img img {
 	object-fit: cover;
 	width: 100%;
+}
+*/
+
+.error-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.error-image {
+	width: 25%;
 }
