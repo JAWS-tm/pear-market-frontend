@@ -26,7 +26,7 @@ CREATE TABLE products(
 
 
 
-CREATE TABLE account(
+CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(20),
     firstname VARCHAR(20),
@@ -46,7 +46,7 @@ CREATE TABLE orders(
     date DATE,
     state TINYINT,
     PRIMARY KEY(id),
-    FOREIGN KEY(customer_id) REFERENCES account(id)
+    FOREIGN KEY(customer_id) REFERENCES users(id)
 );
 
 
