@@ -28,11 +28,13 @@ CREATE TABLE products(
 
 CREATE TABLE users(
     email VARCHAR(64) NOT NULL, 
+    phone VARCHAR(13),
     password VARCHAR(100) NOT NULL,
     name VARCHAR(20),
     firstname VARCHAR(20),
     address VARCHAR(255),
     is_admin BOOLEAN DEFAULT 0,
+    is_blocked BOOLEAN DEFAULT 0,
     PRIMARY KEY(email)
 );
 
