@@ -85,12 +85,24 @@ input[type="number"]{
 }
 
 
-/**************** black list *************/
+/**************** users list *************/
 
-.black-list-container tr{
-    grid-template-columns: 25% 25% 25% 25%;
+.users-list-container tr{
+    grid-template-columns: 35% 20% 20% 25%;
+    position: relative;
 }
 
-.black-list-container a{
-    text-align: left;
+.users-list-container a{
+    text-align: center;
+}
+
+.users-list-container td{
+    display: flex;
+    align-items: center;
+}
+
+.cross-account{
+    margin: 0 50px;
+    position: absolute;
+    right: 0;
 }

@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Panier</title>
-		<link rel="stylesheet" href="css/cart.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
+		<title>Paiement</title>
+		<link rel="stylesheet" href="/css/edit-product.css" />
+		<link rel="stylesheet" href="/css/responsive.css" />
 		<script src="https://kit.fontawesome.com/1e6afd82c6.js" crossorigin="anonymous"></script>
 		<link rel="icon" type="image/jpg" href="assets/img/logo.png" />
 	</head>
@@ -57,56 +57,34 @@
 			</header>
 
 			<section class="content-area">
-				<section class="cart-container">
-					<h1>Panier</h1>
-					<table>
-						<tr>
-							<th id="cart-product-thead">Produit</th>
-							<th id="cart-price-thead">Prix</th>
-							<th id="cart-quantity-thead">Quantité</th>
-							<th id="cart-subtotal-thead">Total</th>
-						</tr>
+				<section class="edit-product-container">
+					<h1 class="page-title">Ajouter un produit</h1>
+                    <div class="edit-product">
+						<form action="POST" class="edit-product-form">
+						
+							<label for="productName">Nom du produit</label>
+							<input type="text" name="productName" id="productName" placeholder="ex: iphone 13" required />
 
-						<tr>
-							<td>
-								<div class="cart-product-container">
-									<i class="fa-solid fa-xmark cross-delete-btn"></i>
-									<img src="assets/img/phone.png" alt="" />
-									<h3>Nom</h3>
-								</div>
-							</td>
-							<td>prix</td>
-							<td>
-								<input type="number" value="1" min="1" max="99" />
-							</td>
-							<td>prix total</td>
-						</tr>
-					</table>
-					<div class="cart-coupon">
-						<input type="text" placeholder="Coupon code" />
-						<a href="#" class="red-button">APPLIQUER</a>
+							<label for="productCategorie">Catégorie</label>
+							<input type="text" name="productCategorie" id="productCategorie" placeholder="ex: Smartphone" required />
+
+							<label for="productDescription">Description</label>
+							<input type="text" name="productDescription" id="productDescription" placeholder="ex: Angers" required />
+
+							<label for="productPrice">Prix</label>
+							<input type="text" name="productPrice" id="productPrice" placeholder="ex: 29.99" required />
+
+							<label for="productQuantity">Quantité</label>
+							<input type="text" name="productQuantity" id="productQuantity" placeholder="ex: 19" required />
+
+							<label for="productImage">Image</label>
+							<input type="file" name="productImage" id="productImage" accept="image/png"/>
+
+							<input type="submit" name="save" id="save" value="Enregistrer" class="red-button">
+						</form>
 					</div>
-
-					<div class="cart-totals-price">
-						<div class="cart-totals-text-container">
-							<h2>Total panier</h2>
-						</div>
-						<div class="cart-total-flex-container">
-							<div class="cart-subtotals">
-								<h3>Totals</h3>
-								<h3>90.00€</h3>
-							</div>
-
-							<div class="cart-total">
-								<h3>Total</h3>
-								<h3>90.00€</h3>
-							</div>
-
-							<a href="/checkout.html" id="paiement-btn" class="red-button">Proceder au paiement</a>
-						</div>
-					</div>
-				</section>
-			</section>
-		</div>
-	</body>
+                </section>
+            </section>
+        </div>
+    </body>
 </html>

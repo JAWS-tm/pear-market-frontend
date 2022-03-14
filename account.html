@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mon compte</title>
 		<link rel="stylesheet" href="css/account.css" />
-		<link rel="stylesheet" href="../../../../../../../../Projet%20Java%20EE/projet_java_web/css/responsive.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
 		<script src="https://kit.fontawesome.com/1e6afd82c6.js" crossorigin="anonymous"></script>
-		<link rel="icon" type="image/jpg" href="../../../../../../../../Projet%20Java%20EE/projet_java_web/assets/img/logo.png" />
+		<link rel="icon" type="image/jpg" href="assets/img/logo.png" />
 	</head>
 	<body>
 		<div class="container">
@@ -17,7 +17,7 @@
 					<div class="background"></div>
 					<div class="shop-logo">
 						<a href="/">
-							<img src="../../../../../../../../Projet%20Java%20EE/projet_java_web/assets/img/logo2.svg" alt="logo marque" />
+							<img src="assets/img/logo.png" alt="logo marque" />
 							<h1>Pear Vendor</h1>
 						</a>
 					</div>
@@ -64,7 +64,7 @@
 						<li class="tab active" data-tab-name="set-account">Gérer compte</li>
 						<li class="tab" data-tab-name="orders">Mes commandes</li>
                         <li class="tab" data-tab-name="products">Gérer les produits</li>
-                        <li class="tab" data-tab-name="black-list">Liste noire</li>
+                        <li class="tab" data-tab-name="users-list">Liste noire</li>
 					</ul>
 					<div class="tabs-content-list">
 
@@ -145,7 +145,7 @@
                                         <td>Iphone 14</td>
                                         <td>Smartphone</td>
                                         <td><input type="number" value="2" min="0"></td>
-                                        <td><div><a href="#">Supprimer</a>  <a href="#">Modifier</a></div></td>
+                                        <td><div class="action-buttons"><a href="#">Supprimer</a>  <a href="#">Modifier</a></div></td>
                                     </tr>
                                 </table>
 
@@ -153,29 +153,29 @@
                             </section>
 						</div>
 
-                        <div class="tab-content" id="black-list">
-							<section class="black-list-container">
-                                <h2>Gestion de la liste noire :</h2>
+                        <div class="tab-content" id="users-list">
+							<section class="users-list-container">
+                                <h2>Gestion de la liste d'utilisateurs :</h2>
                                 <table>
                                     <tr class="tr-head">
-                                        <th id="black-list-id-thead">Identifiant</th>
-                                        <th id="black-list-firstname-thead">Nom</th>
-                                        <th id="black-list-name-thead">Prénom</th>
-                                        <th id="black-list-action-thead">Action</th>
+                                        <th id="users-list-id-thead">Identifiant</th>
+                                        <th id="users-list-firstname-thead">Nom</th>
+                                        <th id="users-list-name-thead">Prénom</th>
+                                        <th id="users-list-action-thead">Action</th>
                                     </tr>
 
                                     <tr>
                                         <td>36772</td>
                                         <td>Dumartin</td>
                                         <td>Hugo</td>
-                                        <td><a href="#">Débloquer</a></td>
+                                        <td><div class="action-buttons"><a href="#">Mettre admin</a>  <a href="#">Débloquer</a></div><i class="fa-solid fa-xmark cross-delete-btn cross-account"></i></td>
                                     </tr>
 
                                     <tr>
                                         <td>12098</td>
                                         <td>Dempt</td>
                                         <td>jules</td>
-                                        <td><a href="#">Débloquer</a></td>
+                                        <td><div class="action-buttons"><a href="#">Supp admin</a>  <a href="#">Bloquer</a></div><i class="fa-solid fa-xmark cross-delete-btn cross-account"></i></td>
                                     </tr>
                                 </table>
                                 <a href="#" class="red-button">Ajouter à la liste</a>
@@ -188,6 +188,6 @@
             </section>
 
         </div>
-        <script src="../../../../../../../../Projet%20Java%20EE/projet_java_web/js/product.js"></script>
+        <script src="/js/product.js"></script>
     </body>
 </html>

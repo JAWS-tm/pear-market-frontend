@@ -47,19 +47,7 @@ td h3 {
 .cart-product-container img {
 	height: 10vh;
 }
-.cart-product-container i {
-	border: 1px solid rgba(0, 0, 0, 0.4);
-	color: rgba(0, 0, 0, 0.4);
-	padding: 2px 5px;
-	margin: 4px;
-	border-radius: 100px;
-	cursor: pointer;
-	transition: 0.2s;
-}
-.cart-product-container i:hover {
-	border: 1px solid rgba(0, 0, 0, 0.7);
-	color: rgba(0, 0, 0, 0.7);
-}
+
 
 .cart-coupon {
 	margin: 10px 0;
