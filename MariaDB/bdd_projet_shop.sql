@@ -39,10 +39,10 @@ CREATE TABLE users(
 );
 
 
-CREATE TABLE discountCode(
-    id STRING NOT NULL,
+CREATE TABLE discount_code(
+    id VARCHAR(20) NOT NULL,
     discount INT NOT NULL,
-    PRIMARY KEY(id),
+    PRIMARY KEY(id)
 );
 
 
@@ -52,14 +52,14 @@ CREATE TABLE orders(
     date DATE,
     state TINYINT,
     shippingFees INT,
-    discountCode STRING,
+    discountCode VARCHAR(20),
     PRIMARY KEY(id),
     FOREIGN KEY(customer_id) REFERENCES users(email),
-    FOREIGN KEY(discountCode) REFERENCES discountCode(id)
+    FOREIGN KEY(discountCode) REFERENCES discount_code(id)
 );
 
 
-CREATE TABLE content-orders(
+CREATE TABLE content_orders(
     order_id INT NOT NULL,
     product_id INT NOT NULL,
     quantity SMALLINT,
