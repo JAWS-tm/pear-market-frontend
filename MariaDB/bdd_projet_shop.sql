@@ -39,6 +39,11 @@ CREATE TABLE users(
 );
 
 
+CREATE TABLE discountCode(
+    id STRING NOT NULL,
+    discount INT NOT NULL,
+    PRIMARY KEY(id),
+);
 
 
 CREATE TABLE orders(
@@ -46,8 +51,11 @@ CREATE TABLE orders(
     customer_id VARCHAR(64) NOT NULL,
     date DATE,
     state TINYINT,
+    shippingFees INT,
+    discountCode STRING,
     PRIMARY KEY(id),
-    FOREIGN KEY(customer_id) REFERENCES users(email)
+    FOREIGN KEY(customer_id) REFERENCES users(email),
+    FOREIGN KEY(discountCode) REFERENCES discountCode(id)
 );
 
 
