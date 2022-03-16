@@ -54,7 +54,7 @@ CREATE TABLE orders(
     shippingFees INT,
     discountCode VARCHAR(20),
     PRIMARY KEY(id),
-    FOREIGN KEY(customer_id) REFERENCES users(email),
+    FOREIGN KEY(customer_id) REFERENCES users(email) ON DELETE CASCADE,
     FOREIGN KEY(discountCode) REFERENCES discount_code(id)
 );
 
@@ -63,8 +63,8 @@ CREATE TABLE content_orders(
     order_id INT NOT NULL,
     product_id INT NOT NULL,
     quantity SMALLINT,
-    FOREIGN KEY(order_id) REFERENCES orders(id),
-    FOREIGN KEY(product_id) REFERENCES products(id)
+    FOREIGN KEY(order_id) REFERENCES orders(id) ON DELETE CASCADE,
+    FOREIGN KEY(product_id) REFERENCES products(id) ON DELETE CASCADE
 );
 
 
