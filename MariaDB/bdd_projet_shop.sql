@@ -19,6 +19,7 @@ CREATE TABLE products(
     price FLOAT,
     quantity SMALLINT,
     attributes VARCHAR(1000),
+    active BOOLEAN DEFAULT 1,
     PRIMARY KEY(id),
     FOREIGN KEY(category_id) REFERENCES categories(id)
 );
@@ -49,7 +50,7 @@ CREATE TABLE discount_code(
 CREATE TABLE orders(
     id INT NOT NULL AUTO_INCREMENT,
     customer_id VARCHAR(64) NOT NULL,
-    date DATE,
+    date DATETIME,
     state TINYINT,
     shippingFees INT,
     discountCode VARCHAR(20),
